@@ -60,7 +60,7 @@
           sorter: true,
         },
       ];
-      const requestApi = computed(() => {
+      const beforeFetchFn = computed(() => {
         return (request) => {
           // request.id = unref(props).ouId;
           request.filter = unref(filter);
@@ -72,7 +72,7 @@
         columns: dataColumns,
         api: getUnaddedRoles,
         beforeParams: () => [unref(props).ouId],
-        beforeFetch: requestApi,
+        beforeFetch: beforeFetchFn,
         pagination: true,
         striped: false,
         useSearchForm: false,

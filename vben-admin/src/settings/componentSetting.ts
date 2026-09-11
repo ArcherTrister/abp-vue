@@ -25,9 +25,9 @@ export default {
     // Custom general sort function
     defaultSortFn: (sortInfo: SorterResult) => {
       const { field, order } = sortInfo;
-      // ¸ñÊ½»¯ÅÅÐò¶ÔÏó
+      // 排序
       let sorting = field;
-      // fix: sorting¿ÉÄÜÎª¿Õ
+      // fix: sorting
       if (sorting) {
         switch (order) {
           case 'descend':
@@ -36,7 +36,7 @@ export default {
           case 'ascend':
             sorting = field.concat(' ASC');
             break;
-          // fix: È¡ÏûÅÅÐò
+          // fix: no sorting
           default:
             sorting = '';
             break;

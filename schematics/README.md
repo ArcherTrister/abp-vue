@@ -24,7 +24,7 @@ run`build-all.ps1`, relevant parameters, see the file
 
 ```
 npm run build
-schematics .:proxy-add --sourceUrl 'http://localhost:8086' --rootNamespace 'Zoey|Zoey.Admin|Volo.Abp|Volo.Abp.AspNetCore.Mvc' --dry-run=false --module 'account'
+schematics .:proxy-add --url 'http://localhost:8086' --source 'Zoey|Zoey.Admin|Volo.Abp|Volo.Abp.AspNetCore.Mvc' --dry-run=false --module 'account'
 ```
 
 ## run by remote
